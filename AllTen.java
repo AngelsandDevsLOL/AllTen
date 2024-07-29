@@ -1,15 +1,17 @@
-import java.util.ArrayList;
+import java.util.*;
 
-public class ALLTEN {
+public class AllTen {
     public static String[] arr = new String[10];
     public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
         ArrayList<Double> ar = new ArrayList<>();
         ArrayList<Boolean> orig = new ArrayList<>();
         ArrayList<String> path = new ArrayList<>();
-        ar.add(5.0);
-        ar.add(6.0);
-        ar.add(6.0);
-        ar.add(7.0);
+        
+        for (int i = 0; i < 4; i++) {
+            ar.add((double) sc.nextInt());
+        }
+        
         orig.add(true); orig.add(true); orig.add(true); orig.add(true);
         for (double x : ar) {
             path.add(String.valueOf(x));
